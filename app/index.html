@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
@@ -55,6 +55,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
        in this file. All other imports should go in elements.html -->
   <link rel="import" href="elements/elements.html">
 
+	<link rel="import" href="bower_components/test-element/test-element.html" />
+
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
 </head>
@@ -96,12 +98,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="book"></iron-icon>
             <span>Books</span>
           </a>
+
+			<a data-route="custom" href="{{baseUrl}}custom">
+				<iron-icon icon="dashboard"></iron-icon>
+				<span>Custom element</span>
+			</a>
         </paper-menu>
       </paper-scroll-header-panel>
 
       <!-- Main Area -->
       <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
-        <!-- Main Toolbar -->
+       <!-- Main Toolbar -->
         <paper-toolbar id="mainToolbar" class="tall">
           <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
 
@@ -190,6 +197,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p>Hello, World!</p>
               </paper-material>
             </section>
+
+		  	<section data-route="custom" tabindex="-1">
+		  		<paper-material elevation="1">
+		  			<h1 class="page-title" tabindex="-1">Custom element</h1>
+
+			  	<button id="saySomething">Say Something</button>
+			  	<test-element author='{"name": "Lord Meowser", "image": "http://placekitten.com/g/200/300"}' fancy>
+			  		<h2>Hello test-element</h2>
+			  	</test-element>
+
+		  		</paper-material>
+		  	</section>
+
           </iron-pages>
         </div>
       </paper-scroll-header-panel>

@@ -68,8 +68,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     });
 
     page('/books', function () {
-      app.route = 'books';
-      setFocus(app.route);
+    	app.route = 'books';
+    	setFocus(app.route);
+    });
+
+    page('/custom', function () {
+    	app.route = 'custom';
+    	setFocus(app.route);
     });
 
     // 404
