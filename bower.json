@@ -9,7 +9,8 @@
     "platinum-elements": "PolymerElements/platinum-elements#^1.1.0",
     "polymer": "Polymer/polymer#^1.2.0",
     "test-element": "dwsmorris/test-element#^0.0.1",
-    "icon-toggle": "dwsmorris/icon-toggle#^0.0.1"
+    "icon-toggle": "dwsmorris/icon-toggle#^0.0.1",
+    "for-clojure": "dwsmorris/for-clojure"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
