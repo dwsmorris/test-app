@@ -43,12 +43,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   		alert(document.querySelector('test-element').sayHello('Hallo!'));
   	});
 
-  	var testElement = document.querySelector("test-element");
-  	var forClojure = document.querySelector("for-clojure");
-  	var i = 0;
-  	setInterval(function () {
-  		testElement.penultimate = forClojure.no20([1, 2, i++, 4]);
-  	}, 1000);
   });
 
   // Main area's paper-scroll-header-panel custom condensing transformation of
