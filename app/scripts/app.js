@@ -43,6 +43,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   		alert(document.querySelector('test-element').sayHello('Hallo!'));
   	});
 
+  	document.querySelector("increment-display#custom-increment-display").$$("increment-panel#increment-panel").decrementLabel = "custom -";
   });
 
   // Main area's paper-scroll-header-panel custom condensing transformation of
